@@ -54,8 +54,40 @@ importers:
       typescript:
         specifier: ^4.9.3
         version: 4.9.3
+      esbuild:
+        specifier: ^0.25.3
+        version: 0.25.3
+      nodemon:
+        specifier: ^3.1.10
+        version: 3.1.10
 
 packages:
+
+  'simple-update-notifier@2.0.0':
+    resolution: {integrity: sha512-a2B9Y0KlNXl9u/vsW6sTIu9vGEpfKu2wRV6l1H3XEas/0gUIzGzBoP/IouTcUQbm9JWZLH3COxyn03TYlFax6w==}
+    engines: {node: '>=10'}
+    dependencies:
+        semver: 7.5.4
+
+  'esbuild@0.25.3':
+    resolution: {integrity: sha512-i4ENaOZ7vOymZ+Y3QNkrHzXvFFNSQAZ7TxWip8N/xhX2GyM7O2lXAJzK7O7M9nh8hNHTD7DAH2b/4wiDJb7FrQ==}
+    hasBin: true
+
+  'nodemon@3.1.10':
+    resolution: {integrity: sha512-cq4pLvz5MLz0Omj82DEumJD3ldF9j4X3PoH8uCiuqLNqFDL2+1W2oip6u+xgwaHFj04g3DGAglhF3DSTnPDouQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+        chokidar: 3.5.3
+        debug: 3.2.7(supports-color@5.5.0)
+        ignore-by-default: 1.0.1
+        minimatch: 3.1.2
+        pstree.remy: 1.1.8
+        semver: 7.5.4
+        simple-update-notifier: 2.0.0
+        supports-color: 5.5.0
+        touch: 3.1.0
+        undefsafe: 2.0.5
 
   '@babel/generator@7.18.2':
     resolution: {integrity: sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw==}
